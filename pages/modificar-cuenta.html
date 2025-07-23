@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta</title>
+    
+    <link rel="icon" href="../../Assets/iconLogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/modificar-cuenta.css">
+    <link rel="stylesheet" href="../styles/carrito.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <a href="sesion-iniciada.html" class="encabezado-logo">
+            <img src="../../Assets/Logo.png" alt="Logo Come Rapidito">
+        </a>
+
+        <nav class="encabezado-navegacion">
+            <ul class="encabezado-lista">
+                <li class="encabezado-item"><a href="../pages/sesion-iniciada.html" class="encabezado-enlace">Home</a>
+                </li>
+                <li class="encabezado-item"><a href="./pedidos-sesion.html" class="encabezado-enlace">Pedidos</a></li>
+                <li class="encabezado-item"><a href="../../admin-feature/administrador/pages/registro.html"
+                        id="abrir-modal-negocio" class="encabezado-enlace">Mi negocio</a></li>
+            </ul>
+        </nav>
+
+        <div class="encabezado-iconos">
+            <a href="../../repartidor-feature/pages/registro-cuenta.html" id="abrir-modal-repartidor"class="encabezado-icono"><img src="../../Assets/repartidores.png" alt="Icono delivery"></a>
+            <a href="../pages/carrito-sesion.html" class="encabezado-icono"><img src="../../Assets/carrito.png" alt="Icono carrito"></a>
+
+
+            <div class="dropdown">
+                <a href="" class="dropbtn">
+                    <img src="../../Assets/iconUsuario .png" alt="Icono usuario" class="dropbtn_img">
+                    <span id="usuarioNombre"></span> </a>
+
+                <div class="dropdown-content">
+                    <a href="historial-pedidos.html">Historial</a>
+                    <a href="../pages/modificar-cuenta.html">Mi Cuenta</a>
+                    <a href="../pages/index.html" id="cerrar-sesion">Cerrar Sesión</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="seccion-cuenta">
+            <h1 class="seccion-cuenta-titulo">
+             <img src="../../Assets/iconCuenta.png" alt="Icono de Cuenta"> CUENTA
+            </h1>
+
+            <div class="formulario-perfil-contenedor">
+                <form class="formulario-perfil">
+                    <div class="formulario-perfil-grupo">
+                        <label for="nombre" class="formulario-perfil-etiqueta">Nombre(s)</label>
+                        <input type="text" id="nombre" class="formulario-perfil-entrada" value="Emilia">
+                    </div>
+
+                    <div class="formulario-perfil-grupo">
+                        <label for="apellido" class="formulario-perfil-etiqueta">Apellido(s)</label>
+                        <input type="text" id="apellido" class="formulario-perfil-entrada" value="Gomez Utrilla">
+                    </div>
+
+                    <div class="formulario-perfil-grupo">
+                        <label for="telefono" class="formulario-perfil-etiqueta">Número Telefónico</label>
+                        <input type="tel" id="telefono" class="formulario-perfil-entrada" value="961 364 5469">
+                    </div>
+
+                    <div class="formulario-perfil-grupo">
+                        <label for="email" class="formulario-perfil-etiqueta">Correo electrónico</label>
+                        <input type="email" id="email" class="formulario-perfil-entrada" value="emigomu@gmail.com">
+                    </div>
+
+
+                    <button type="submit" class="formulario-perfil-boton">
+                        ☆ Guardar cambios
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <script src="../JS/modificar-cuenta.js"></script>
+    <script src="../JS/sesion-iniciada.js"></script>
+</body>
+</html>
